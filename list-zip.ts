@@ -50,7 +50,7 @@ export default class ListZip<T> {
 		while (list.canClose) {
 			list = list.close();
 		}
-		return this.end.push(this.value);
+		return list.end.push(list.value);
 	}
 
 	static create<T>(list: List<T>): ListZip<T> {
